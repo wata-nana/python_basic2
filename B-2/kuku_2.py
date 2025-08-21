@@ -5,14 +5,14 @@ def kuku_custom():
     column_num = int(input("列数を入力してください: "))
 
     # 繰り返し処理
-    for i in range(1, row_num+1):
-        for j in range(1, column_num+1):
+    for i in range(1, row_num + 1):
+        for j in range(1, column_num + 1):
 
             if j == column_num:
-                print(i*j)
+                print(i * j)
 
             else:
-                print(i*j, end=" ")
+                print(i * j, end=" ")
 
 
 # ファイルを直接実行した際にのみ行う処理

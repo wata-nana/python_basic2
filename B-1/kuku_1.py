@@ -7,11 +7,11 @@ def kuku():
 
             # かける数が9の時に改行する
             if j == 9:
-                print(i*j)
+                print(i * j)
 
             # その他は一文字開ける
             else:
-                print(i*j, end=" ")
+                print(i * j, end=" ")
 
 
 # ファイルを直接実行した際にのみ行う処理

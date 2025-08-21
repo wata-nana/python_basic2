@@ -12,7 +12,7 @@ def beauty_kuku(row_num, column_num):
         for j in range(1, column_num + 1):
 
             # 中央揃えかつ桁に応じて空白を設けて表示するよう設定
-            answer = f"{j:^{width}}x {i:^{width}}= {i*j:^{width}}" + RED + "|" + END
+            answer = f"{j:<{width}}x {i:<{width}}= {i*j:>{width}} " + RED + "|" + END
 
             # 改行 or 空白に分けて出力
             if j == column_num:
