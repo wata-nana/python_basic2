@@ -2,13 +2,15 @@
 def beauty_kuku(row_num, column_num):
 
     # 空白桁の設定
-    width = len(str(row_num * column_num))
+    width_row = len(str(row_num))
+    width_column = len(str(column_num))
+    width_ans = len(str(row_num * column_num))
 
     for i in range(1, row_num + 1):
         for j in range(1, column_num + 1):
 
             # 中央揃えかつ桁に応じて空白を設けて表示するよう設定
-            answer = f"{j:<{width}}x {i:<{width}}= {i*j:>{width}} " + "|"
+            answer = f"{j:<{width_column}} x {i:<{width_row}} = {i*j:>{width_ans}} " + "|"
 
             # 改行 or 空白に分けて出力
             if j == column_num:

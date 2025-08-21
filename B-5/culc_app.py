@@ -36,8 +36,8 @@ def min_calc(num_list):
 def average_calc(num_list):
     total = total_calc(num_list)
     average = total / len(num_list)
-    # 小数点第2位までに形式を丸める
-    return format(average, ".2f")
+
+    return int(average)
 
 
 # 入力値の受付と演算結果の出力
